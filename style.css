@@ -34,13 +34,13 @@ body {
 }
 
 .button {
-    text-transform: uppercase;
+    padding: 1em 1.94em;
+    height: 4rem;
     font-family: inherit;
     font-size: 1.125em;
+    text-transform: uppercase;
     border: 0em;
-    padding: 1em 1.94em;
     border-radius: 4.8em;
-    height: 4rem;
 }
 
 .blue-button {
@@ -55,19 +55,19 @@ body {
 
 .header-container {
     display: flex;
-    align-items: center;
-    padding: 2.2em 3.94em;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     z-index: 5;
-    background-color: white;
+    padding: 2.2em 3.94em;
     top: 0;
-    left: 0;
-    right: 0;
     font-size: 1.125em;
+    background-color: white;
 }
 
-.logo {}
+.logo {
+
+}
 
 .menu-list {
     display: flex;
@@ -77,7 +77,6 @@ body {
 .menu-item {
     margin-left: 3.1em;
 }
-
 
 /* First screen */
 
@@ -117,9 +116,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin-inline: 15vw;
     height: 70vh;
+    text-align: center;
 }
 
 .subtitle-screen-container>* {
@@ -138,12 +137,12 @@ body {
 .description-block {
     display: flex;
     flex-direction: row;
-    background-color: #F1FDFF;
+    justify-content: space-between;
     padding-inline: 6vw;
     padding-block: 6vh;
     margin-bottom: 2em;
     width: 75vw;
-    justify-content: space-between;
+    background-color: #F1FDFF;
 }
 
 .flex-wrapper {
@@ -157,10 +156,6 @@ body {
     font-size: 2.875em;
     line-height: 1.1em;
     margin-bottom: 1rem;
-}
-
-.image-container {
-    /* flex: 1, 1, auto; */
 }
 
 .block-img {
@@ -186,9 +181,9 @@ body {
 }
 
 .slogan-screen-container {
-    background-color: #F1FDFF;
     position: relative;
     padding: 7vw;
+    background-color: #F1FDFF;
 }
 
 .slogan-screen-container > .subtitle-text {
@@ -197,20 +192,20 @@ body {
 
 .slogan-background {
     position: absolute;
+    z-index: 2;
     right: -40px;
     bottom: 0;
     width: 715px;
     height: 410px;
-    z-index: 2;
 }
 
 .slogan-image {
     position: absolute;
+    z-index: 3;
     right: -40px;
     bottom: 0;
     width: 840px;
     height: 567px;
-    z-index: 3;
 }
 
 /* Donate baner  */
@@ -235,7 +230,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 3rem; */
 }
 
 .donate-phone {
@@ -247,7 +241,7 @@ body {
 
 .phone-number {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -264,37 +258,37 @@ body {
 /* Contacts screen */
 
 .contacts-screen {
-    background-color: #F9FADF;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F9FADF;
 }
 
 .contacts-info {
     display: flex;
     flex-direction: row;
+    justify-content: space-between; 
+    align-items: end;
     margin-bottom: 10vh;
     width: 75vw;
     height: 40vh;
-    justify-content: space-between; 
-    align-items:end;
-
 }
 
 .contacts-info > * {
     height: 30vh;
 }
+
 .contacts-title{
     width: 45%;
     text-align: center;
 }
 
 .contacts-text {
-    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    width: 45%;
 }
 
 .contacts-text > * {
@@ -305,17 +299,15 @@ body {
     width: 2rem;
 }
 
-
-
 .contacts-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-inline: 6vw;
     padding-block: 6vh;
+    margin-bottom: 20vh;
     width: 75vw;
     background-color: white;
-    margin-bottom: 20vh;
 }
 
 .contacts-form-container {
@@ -337,19 +329,3 @@ body {
     border: 0;
     background-color: #F9FADF;
 }
-
-
-/* .messanger-info {
-    background-color: antiquewhite;
-} */
-/* @media screen and (max-width: 500px) {
-    body {
-        background-color: grey;
-    }
-
-    .description-block {
-        flex-direction: column;
-    }
-
-
-}  */
