@@ -28,14 +28,19 @@ body {
     color: #73A6B1;
 }
 
+.strong-text {
+    font-family: inherit;
+    font-weight: bolder;
+}
+
 .button {
     text-transform: uppercase;
     font-family: inherit;
     font-size: 1.125em;
     border: 0em;
-    padding: 1.15em 1.94em;
+    padding: 1em 1.94em;
     border-radius: 4.8em;
-    width: fit-content;
+    height: 4rem;
 }
 
 .blue-button {
@@ -137,6 +142,8 @@ body {
     padding-inline: 6vw;
     padding-block: 6vh;
     margin-bottom: 2em;
+    width: 75vw;
+    justify-content: space-between;
 }
 
 .flex-wrapper {
@@ -153,7 +160,7 @@ body {
 }
 
 .image-container {
-    flex: 1, 1, auto;
+    /* flex: 1, 1, auto; */
 }
 
 .block-img {
@@ -211,9 +218,16 @@ body {
 .donate-baner {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     height: 70vh;
+}
+
+.donate-baner * {
+    margin-bottom: 1rem;
+}
+
+.donate-baner > * {
+    margin-bottom: 3rem;
 }
 
 .donate-text {
@@ -221,7 +235,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    /* margin-bottom: 3rem; */
 }
 
 .donate-phone {
@@ -231,6 +245,103 @@ body {
     align-items: center;
 }
 
+.phone-number {
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.vertical-divider {
+    background-color: #9AD2DE;
+    width: 0.025em;
+    height: 1em;
+    margin-inline: 0.2em;
+    margin-bottom: 0;
+}
+
+/* Contacts screen */
+
+.contacts-screen {
+    background-color: #F9FADF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10vh;
+    width: 75vw;
+    height: 40vh;
+    justify-content: space-between; 
+    align-items:end;
+
+}
+
+.contacts-info > * {
+    height: 30vh;
+}
+.contacts-title{
+    width: 45%;
+    text-align: center;
+}
+
+.contacts-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contacts-text > * {
+    width: 70%;
+}
+
+.icon-img {
+    width: 2rem;
+}
+
+
+
+.contacts-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 6vw;
+    padding-block: 6vh;
+    width: 75vw;
+    background-color: white;
+    margin-bottom: 20vh;
+}
+
+.contacts-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.contacts-form-fields-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.contacts-form-input {
+    height: 2rem;
+    border: 0;
+    background-color: #F9FADF;
+}
+
+
+/* .messanger-info {
+    background-color: antiquewhite;
+} */
 /* @media screen and (max-width: 500px) {
     body {
         background-color: grey;
